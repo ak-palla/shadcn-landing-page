@@ -93,8 +93,8 @@ export const PricingSection = () => {
               key={title}
               className={
                 popular === PopularPlan?.YES
-                  ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1]"
-                  : ""
+                  ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1] bg-white dark:bg-card"
+                  : "bg-[#F0EEE6] dark:bg-card"
               }
             >
               <CardHeader>

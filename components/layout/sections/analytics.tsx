@@ -51,7 +51,7 @@ export const AnalyticsSection = () => {
         ))}
       </div>
 
-      <p className="max-w-3xl mx-auto text-center text-lg text-black dark:text-foreground">
+      <p className="max-w-3xl mx-auto text-center text-lg font-bold text-black dark:text-foreground">
         Access your conversation dashboard to review transcripts, identify trends, and improve your offerings based on real visitor needs.
       </p>
     </section>
