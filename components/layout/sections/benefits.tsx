@@ -26,20 +26,20 @@ const problemList: ProblemProps[] = [
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
+    <section id="benefits" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Problem</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">Problem</h2>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Website Shouldn't Feel Like a Locked Door
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Your Website Shouldn&apos;t Feel Like a Locked Door
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Every day, potential clients visit your website with questions. They're interested, but:
+          <p className="text-lg md:text-xl font-normal leading-relaxed text-muted-foreground mb-10">
+            Every day, potential clients visit your website with questions. They&apos;re interested, but:
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-6 w-full">
           {problemList.map(({ number, description }) => (
             <Card
               key={number}

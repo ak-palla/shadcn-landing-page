@@ -51,13 +51,13 @@ const FAQList: FAQProps[] = [
 
 export const FAQSection = () => {
   return (
-    <section id="faq" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
+    <section id="faq" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+        <h2 className="text-sm font-semibold uppercase tracking-wider text-center mb-2">
           FAQS
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight">
           Frequently Asked Questions
         </h2>
       </div>

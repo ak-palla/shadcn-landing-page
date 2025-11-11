@@ -49,17 +49,17 @@ export const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
+    <section id="contact" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div className="mb-4">
-            <h2 className="text-lg text-primary mb-2 tracking-wider">
+            <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">
               Contact
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Connect With Us</h2>
           </div>
-          <p className="mb-8 text-muted-foreground lg:w-5/6">
+          <p className="mb-8 text-lg md:text-xl font-normal leading-relaxed text-muted-foreground lg:w-5/6">
             Please share your thoughts and feedback regarding our product.
           </p>
 

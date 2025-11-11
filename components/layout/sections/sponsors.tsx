@@ -4,7 +4,7 @@ const sponsors = ["Groq", "Deepgram", "Cartesia"];
 
 export const SponsorsSection = () => {
   return (
-    <section id="sponsors" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 pb-24 sm:pb-32">
+    <section id="sponsors" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <h2 className="text-2xl md:text-3xl text-center mb-8 font-semibold">
         Powered by
       </h2>

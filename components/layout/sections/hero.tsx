@@ -10,7 +10,7 @@ export const HeroSection = () => {
   const { theme } = useTheme();
   return (
     <section className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 w-full">
-      <div className="grid place-items-center gap-8 py-20 md:py-32">
+      <div className="grid place-items-center gap-8 py-16 md:py-24 lg:py-32">
         <div className="text-center space-y-8">
           
 
@@ -23,7 +23,7 @@ export const HeroSection = () => {
             </h1>
           </div>
 
-          <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+          <p className="max-w-screen-sm mx-auto text-lg md:text-xl font-normal leading-relaxed text-muted-foreground">
             Your AI-powered site agent that guides visitors, answers questions, conversational analytics and books appointments—24/7.
           </p>
           

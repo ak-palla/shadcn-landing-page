@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
+    <footer id="footer" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <div className="p-10 bg-card border border-secondary rounded-2xl">
         <div className="mb-8">
           <Link href="/" className="flex font-bold items-center">
@@ -36,7 +36,7 @@ export const FooterSection = () => {
 
             <div>
               <Link href="#faq" className="opacity-60 hover:opacity-100">
-                FAQ's
+                FAQ&apos;s
               </Link>
             </div>
           </div>

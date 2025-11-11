@@ -21,24 +21,24 @@ const analyticsItems: AnalyticsItemProps[] = [
 
 export const AnalyticsSection = () => {
   return (
-    <section id="analytics" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
+    <section id="analytics" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <div className="text-center mb-12">
-        <h2 className="text-lg text-primary mb-2 tracking-wider">
+        <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">
           Analytics
         </h2>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
           Finally Understand What Your Visitors Actually Want
         </h2>
 
-        <p className="max-w-3xl mx-auto text-xl text-muted-foreground mb-8">
-          Your site agent doesn't just help visitors—it gives you intelligence.
+        <p className="max-w-3xl mx-auto text-lg md:text-xl font-normal leading-relaxed text-muted-foreground mb-10">
+          Your site agent doesn&apos;t just help visitors—it gives you intelligence.
         </p>
 
         <p className="text-lg font-semibold mb-6">See exactly:</p>
       </div>
 
-      <div className="flex flex-col gap-4 max-w-5xl mx-auto mb-8">
+      <div className="flex flex-col gap-6 max-w-5xl mx-auto mb-8">
         {analyticsItems.map(({ question }, index) => (
           <Card
             key={index}

@@ -73,20 +73,20 @@ const plans: PlanProps[] = [
 
 export const PricingSection = () => {
   return (
-    <section className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+    <section className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <h2 className="text-sm font-semibold uppercase tracking-wider text-center mb-2">
         Pricing
       </h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight mb-6">
         Get unlimitted access
       </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
+      <h3 className="md:w-1/2 mx-auto text-lg md:text-xl font-normal leading-relaxed text-center text-muted-foreground pb-16">
         Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
       </h3>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6">
         {plans.map(
           ({ title, popular, price, description, buttonText, benefitList }) => (
             <Card

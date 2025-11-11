@@ -72,12 +72,12 @@ export const ComparisonSection = () => {
   };
 
   return (
-    <section id="comparison" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+    <section id="comparison" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <h2 className="text-sm font-semibold uppercase tracking-wider text-center mb-2">
         Comparison
       </h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight mb-8">
         JibberLab Agents vs Traditional Solutions
       </h2>
 

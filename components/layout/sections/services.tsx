@@ -31,20 +31,20 @@ const serviceList: ServiceProps[] = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+    <section id="services" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <h2 className="text-sm font-semibold uppercase tracking-wider text-center mb-2">
         How it works?
       </h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight mb-6">
         Run your Site Agent in 3 Simple Steps
       </h2>
-      <h3 className="max-w-3xl mx-auto text-xl text-center text-muted-foreground mb-8">
+      <h3 className="max-w-3xl mx-auto text-lg md:text-xl font-normal leading-relaxed text-center text-muted-foreground mb-10">
         Everything you need to deploy intelligent AI agents on your website. 
         From automatic content learning to multi-modal interactions.
       </h3>
 
-      <div className="flex flex-col gap-4 max-w-5xl mx-auto">
+      <div className="flex flex-col gap-6 max-w-5xl mx-auto">
         {serviceList.map(({ step, title, description }) => (
           <Card
             key={title}
