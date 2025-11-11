@@ -46,10 +46,10 @@ export const BusinessOwnersSection = () => {
         Benefits
       </h2>
 
-      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight mb-6">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-snug mb-6">
         Why Business Owners Choose JibberLab?
       </h2>
-      <h3 className="max-w-3xl mx-auto text-lg md:text-xl font-normal leading-relaxed text-center text-muted-foreground mb-10">
+      <h3 className="max-w-3xl mx-auto text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-center text-foreground/80 mb-10">
         Everything you need to deploy intelligent AI agents on your website. 
         From automatic content learning to multi-modal interactions.
       </h3>

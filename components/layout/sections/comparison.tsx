@@ -77,7 +77,7 @@ export const ComparisonSection = () => {
         Comparison
       </h2>
 
-      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight mb-8">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-snug mb-8">
         JibberLab Agents vs Traditional Solutions
       </h2>
 

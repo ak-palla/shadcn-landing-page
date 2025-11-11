@@ -31,10 +31,10 @@ export const BenefitsSection = () => {
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">Problem</h2>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-6">
             Your Website Shouldn&apos;t Feel Like a Locked Door
           </h2>
-          <p className="text-lg md:text-xl font-normal leading-relaxed text-muted-foreground mb-10">
+          <p className="text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-foreground/80 mb-10">
             Every day, potential clients visit your website with questions. They&apos;re interested, but:
           </p>
         </div>

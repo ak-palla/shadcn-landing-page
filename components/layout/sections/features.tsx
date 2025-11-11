@@ -36,11 +36,11 @@ export const FeaturesSection = () => {
         Solution
       </h2>
 
-      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight mb-6">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-snug mb-6">
         Meet Your New Site Agent
       </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-lg md:text-xl font-normal leading-relaxed text-center text-muted-foreground mb-10">
+      <h3 className="md:w-1/2 mx-auto text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-center text-foreground/80 mb-10">
         An intelligent AI assistant embedded on your website that works around the clock.
       </h3>
 

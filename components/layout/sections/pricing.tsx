@@ -78,11 +78,11 @@ export const PricingSection = () => {
         Pricing
       </h2>
 
-      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight mb-6">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-snug mb-6">
         Get unlimitted access
       </h2>
 
-      <h3 className="md:w-1/2 mx-auto text-lg md:text-xl font-normal leading-relaxed text-center text-muted-foreground pb-16">
+      <h3 className="md:w-1/2 mx-auto text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-center text-foreground/80 pb-16">
         Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
       </h3>
 

@@ -14,7 +14,7 @@ export const HeroSection = () => {
         <div className="text-center space-y-8">
           
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
+          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-5xl lg:text-7xl font-extrabold leading-snug">
             <h1>
               Turn Your Website Into a{" "}
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
@@ -23,7 +23,7 @@ export const HeroSection = () => {
             </h1>
           </div>
 
-          <p className="max-w-screen-sm mx-auto text-lg md:text-xl font-normal leading-relaxed text-muted-foreground">
+          <p className="max-w-screen-sm mx-auto text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-foreground/80">
             Your AI-powered site agent that guides visitors, answers questions, conversational analytics and books appointments—24/7.
           </p>
           

@@ -57,7 +57,7 @@ export const FAQSection = () => {
           FAQS
         </h2>
 
-        <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold leading-tight">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-snug">
           Frequently Asked Questions
         </h2>
       </div>

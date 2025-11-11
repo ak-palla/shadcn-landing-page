@@ -57,9 +57,9 @@ export const ContactSection = () => {
               Contact
             </h2>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">Connect With Us</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug">Connect With Us</h2>
           </div>
-          <p className="mb-8 text-lg md:text-xl font-normal leading-relaxed text-muted-foreground lg:w-5/6">
+          <p className="mb-8 text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-foreground/80 lg:w-5/6">
             Please share your thoughts and feedback regarding our product.
           </p>
 

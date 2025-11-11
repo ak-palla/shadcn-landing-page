@@ -27,11 +27,11 @@ export const AnalyticsSection = () => {
           Analytics
         </h2>
 
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-6">
           Finally Understand What Your Visitors Actually Want
         </h2>
 
-        <p className="max-w-3xl mx-auto text-lg md:text-xl font-normal leading-relaxed text-muted-foreground mb-10">
+        <p className="max-w-3xl mx-auto text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-foreground/80 mb-10">
           Your site agent doesn&apos;t just help visitors—it gives you intelligence.
         </p>
 
