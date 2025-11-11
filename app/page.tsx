@@ -1,5 +1,9 @@
+import { AnalyticsSection } from "@/components/layout/sections/analytics";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
-import { CommunitySection } from "@/components/layout/sections/community";
+import { BusinessOwnersSection } from "@/components/layout/sections/business-owners";
+import { ComparisonSection } from "@/components/layout/sections/comparison";
+import { UseCasesSection } from "@/components/layout/sections/use-cases";
+// import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
 import { FAQSection } from "@/components/layout/sections/faq";
 import { FeaturesSection } from "@/components/layout/sections/features";
@@ -8,8 +12,8 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { TeamSection } from "@/components/layout/sections/team";
-import { TestimonialSection } from "@/components/layout/sections/testimonial";
+// import { TeamSection } from "@/components/layout/sections/team";
+// import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
   title: "Shadcn - Landing template",
@@ -47,9 +51,13 @@ export default function Home() {
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
-      <TestimonialSection />
-      <TeamSection />
-      <CommunitySection />
+      <BusinessOwnersSection />
+      {/* <TestimonialSection /> */}
+      {/* <TeamSection /> */}
+      {/* <CommunitySection /> */}
+      <AnalyticsSection />
+      <UseCasesSection />
+      <ComparisonSection />
       <PricingSection />
       <ContactSection />
       <FAQSection />

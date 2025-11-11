@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardDescription,
@@ -6,73 +5,55 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-enum ProService {
-  YES = 1,
-  NO = 0,
-}
 interface ServiceProps {
+  step: string;
   title: string;
-  pro: ProService;
   description: string;
 }
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    step: "S1",
+    title: "Connect Your Website",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
-    pro: 0,
+      "Tell us which pages contain your services and information. Our AI learns everything about what you offer.",
   },
   {
-    title: "Social Media Integrations",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
-    pro: 0,
+    step: "S2",
+    title: "Customize Your Agent",
+    description: "Choose your agent's voice, personality, and availability. Make it sound like you—or your ideal team member.",
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
+    step: "S3",
+    title: "Embed & Launch",
+    description: "Copy one line of code onto your website. Your digital office is now open 24/7.",
   },
 ];
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32">
+    <section id="services" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Services
+        How it works?
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
+        Run your Site Agent in 3 Simple Steps
       </h2>
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+      <h3 className="max-w-3xl mx-auto text-xl text-center text-muted-foreground mb-8">
+        Everything you need to deploy intelligent AI agents on your website. 
+        From automatic content learning to multi-modal interactions.
       </h3>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
-        {serviceList.map(({ title, description, pro }) => (
+      <div className="flex flex-col gap-4 max-w-5xl mx-auto">
+        {serviceList.map(({ step, title, description }) => (
           <Card
             key={title}
-            className="bg-muted/60 dark:bg-card h-full relative"
+            className="bg-muted/60 dark:bg-card"
           >
-            <CardHeader>
-              <CardTitle>{title}</CardTitle>
-              <CardDescription>{description}</CardDescription>
+            <CardHeader className="text-left">
+              <CardTitle className="text-left">{step}: {title}</CardTitle>
+              <CardDescription className="text-left">{description}</CardDescription>
             </CardHeader>
-            <Badge
-              data-pro={ProService.YES === pro}
-              variant="secondary"
-              className="absolute -top-2 -right-3 data-[pro=false]:hidden"
-            >
-              PRO
-            </Badge>
           </Card>
         ))}
       </div>
