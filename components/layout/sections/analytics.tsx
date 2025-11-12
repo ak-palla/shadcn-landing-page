@@ -38,7 +38,7 @@ export const AnalyticsSection = () => {
   }));
 
   return (
-    <section id="analytics" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+    <section id="analytics" className="max-w-[1300px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">
