@@ -1,9 +1,7 @@
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+"use client";
+
+import { Card, CardContent } from "@/components/ui/card";
+import { Timeline } from "@/components/ui/timeline";
 
 interface ServiceProps {
   step: string;
@@ -30,32 +28,41 @@ const serviceList: ServiceProps[] = [
 ];
 
 export const ServicesSection = () => {
+  const timelineData = serviceList.map(({ step, title, description }) => ({
+    title: step,
+    content: (
+      <Card
+        key={title}
+        className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75"
+      >
+        <CardContent className="pt-6">
+          <h3 className="text-lg font-semibold mb-2">{title}</h3>
+          <p className="text-foreground">{description}</p>
+        </CardContent>
+      </Card>
+    ),
+  }));
+
   return (
     <section id="services" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
-      <h2 className="text-sm font-semibold uppercase tracking-wider text-center mb-2">
-        How it works?
-      </h2>
+      <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-wider mb-2">
+            How it works?
+          </h2>
 
-      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-snug mb-6">
-        Run your Site Agent in 3 Simple Steps
-      </h2>
-      <h3 className="max-w-3xl mx-auto text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-center text-foreground/80 mb-10">
-        Everything you need to deploy intelligent AI agents on your website. 
-        From automatic content learning to multi-modal interactions.
-      </h3>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-6">
+            Run your Site Agent in 3 Simple Steps
+          </h2>
+          <p className="text-base md:text-lg lg:text-xl font-medium leading-[1.75] text-foreground/80 mb-10">
+            Everything you need to deploy intelligent AI agents on your website. 
+            From automatic content learning to multi-modal interactions.
+          </p>
+        </div>
 
-      <div className="flex flex-col gap-6 max-w-5xl mx-auto">
-        {serviceList.map(({ step, title, description }) => (
-          <Card
-            key={title}
-            className="bg-muted/60 dark:bg-card"
-          >
-            <CardHeader className="text-left">
-              <CardTitle className="text-left">{step}: {title}</CardTitle>
-              <CardDescription className="text-left">{description}</CardDescription>
-            </CardHeader>
-          </Card>
-        ))}
+        <div className="w-full">
+          <Timeline data={timelineData} />
+        </div>
       </div>
     </section>
   );

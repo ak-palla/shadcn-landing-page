@@ -1,4 +1,7 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
+import { Timeline } from "@/components/ui/timeline";
 
 interface ProblemProps {
   number: string;
@@ -25,6 +28,20 @@ const problemList: ProblemProps[] = [
 ];
 
 export const BenefitsSection = () => {
+  const timelineData = problemList.map(({ number, description }) => ({
+    title: number,
+    content: (
+      <Card
+        key={number}
+        className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75"
+      >
+        <CardContent className="pt-6">
+          <p className="text-foreground">{description}</p>
+        </CardContent>
+      </Card>
+    ),
+  }));
+
   return (
     <section id="benefits" className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
@@ -39,22 +56,8 @@ export const BenefitsSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6 w-full">
-          {problemList.map(({ number, description }) => (
-            <Card
-              key={number}
-              className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
-            >
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30 flex-shrink-0">
-                    {number}
-                  </span>
-                  <p className="text-foreground pt-2">{description}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="w-full">
+          <Timeline data={timelineData} />
         </div>
       </div>
     </section>
