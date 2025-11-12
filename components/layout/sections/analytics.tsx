@@ -54,7 +54,7 @@ export const AnalyticsSection = () => {
           </p>
 
           <p className="text-lg font-semibold mb-6">
-            " Access your conversation dashboard to review transcripts, identify trends, and improve your offerings based on real visitor needs. "
+            &quot; Access your conversation dashboard to review transcripts, identify trends, and improve your offerings based on real visitor needs. &quot;
           </p>
         </div>
 
