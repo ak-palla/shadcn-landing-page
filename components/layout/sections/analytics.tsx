@@ -53,17 +53,15 @@ export const AnalyticsSection = () => {
             Your site agent doesn&apos;t just help visitors—it gives you intelligence.
           </p>
 
-          <p className="text-lg font-semibold mb-6">See exactly:</p>
+          <p className="text-lg font-semibold mb-6">
+            " Access your conversation dashboard to review transcripts, identify trends, and improve your offerings based on real visitor needs. "
+          </p>
         </div>
 
         <div className="w-full">
           <Timeline data={timelineData} />
         </div>
       </div>
-
-      <p className="max-w-3xl mx-auto text-center text-lg font-bold text-black dark:text-foreground mt-12">
-        Access your conversation dashboard to review transcripts, identify trends, and improve your offerings based on real visitor needs.
-      </p>
     </section>
   );
 };
